@@ -50,8 +50,8 @@ export default function Hero() {
         </div>
 
         <div className="flex flex-col items-center justify-center">
-          <div className="relative w-72 h-72 md:w-80 md:h-80 rounded-full bg-white/[0.06] border border-white/10 flex items-center justify-center backdrop-blur-sm">
-            <div className="absolute inset-6 rounded-full border border-white/10" />
+          <div className="relative w-72 h-72 md:w-80 md:h-80 rounded-full bg-white shadow-2xl flex items-center justify-center">
+            <div className="absolute inset-6 rounded-full border border-brand-mist/60" />
             <BrandMark className="w-40 h-40 md:w-48 md:h-48" />
           </div>
         </div>

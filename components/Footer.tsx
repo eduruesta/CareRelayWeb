@@ -1,8 +1,6 @@
 import Link from "next/link";
 import BrandMark from "./BrandMark";
 
-const CONTACT_EMAIL = "eruestadev@gmail.com";
-
 export default function Footer() {
   return (
     <footer className="bg-white border-t border-brand-mist/60 py-14 px-6">
@@ -56,14 +54,6 @@ export default function Footer() {
               <Link href="/terms" className="hover:text-brand-night transition-colors">
                 Terms &amp; Conditions
               </Link>
-            </li>
-            <li>
-              <a
-                href={`mailto:${CONTACT_EMAIL}`}
-                className="hover:text-brand-night transition-colors"
-              >
-                {CONTACT_EMAIL}
-              </a>
             </li>
           </ul>
         </div>
