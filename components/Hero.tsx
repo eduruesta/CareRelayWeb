@@ -1,4 +1,5 @@
 import BrandMark from "./BrandMark";
+import { APP_STORE_URL } from "@/lib/storeLinks";
 
 export default function Hero() {
   return (
@@ -31,15 +32,14 @@ export default function Hero() {
           </p>
 
           <div className="flex flex-wrap gap-4 items-center">
-            <button
-              type="button"
-              disabled
-              title="Coming soon"
-              aria-disabled="true"
-              className="bg-white/15 text-white font-semibold px-7 py-3.5 rounded-full cursor-not-allowed select-none border border-white/20"
+            <a
+              href={APP_STORE_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white text-brand-night font-semibold px-7 py-3.5 rounded-full hover:bg-white/90 transition-all"
             >
-              Download — Coming soon
-            </button>
+              Download on the App Store
+            </a>
             <a
               href="#features"
               className="border-2 border-white/30 text-white font-semibold px-7 py-3.5 rounded-full hover:bg-white/10 transition-all flex items-center gap-2"
